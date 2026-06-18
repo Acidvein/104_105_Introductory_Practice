@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Pixelify";
+    src: url("fonts/PixelifySans-VariableFont_wght.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+    font-family: Pixelify, sans-serif;
+    padding: 0;
+    background-color: #F9F4F5;
+}
+
+.my-header {
+    background-color: #70587C;
+    color: #1E1D1D;
+    padding: 17px;
+    margin-bottom: 9px;
+}
+
+.my-footer {
+    background-color: #70587C;
+    color: #1E1D1D;
+    padding: 17px;
+    margin-bottom: 9px;
+}
+
+.about-section {
+    background-color: #c8b8db;
+    color: #1E1D1D;
+    padding: 34px;
+    margin-bottom: 9px;
+}
+
+.hobby-card {
+    background-color: #c8b8db;
+    color: #1E1D1D;
+    padding: 34px;
+    margin-bottom: 9px;
+}
+
+.books-list {
+    background-color: #c8b8db;
+    color: #1E1D1D;
+    padding: 34px;
+    margin-bottom: 9px;
+}
+
+.my-image {
+    border: 9px solid aquamarine;
+    border-radius: 3px;
+    width: 200px;
+
+}
+
+h1 {
+    text-align: center;
+    color: #502f4c;
+    font-size: 37px;
+}
+
+a {
+    color: darkred;
+    text-decoration: none;
+}
