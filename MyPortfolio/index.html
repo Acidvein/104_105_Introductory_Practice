@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
     <title>Seregin Konstantin</title>
-    <description>Персональное портфолио</description>
 </head>
 <body>
     <header class="my-header">
@@ -17,7 +16,7 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="my-main">
         <section class="about-section">
             <h2>Обо мне</h2>
             <p>Меня зовут Константин</p>
@@ -31,19 +30,44 @@
                 <p>Я увлекаюсь моделированием</p>
                 <p>Собираю и крашу пластиковых солдатиков</p>
             </article>
+            <aside class="books-list">
+                <h3>Мои любимые книги</h3>
+                <ol>
+                    <li>Властелин Колец</li>
+                    <li>Путешествие в Элевсин</li>
+                    <li>Овод</li>
+                </ol>
+            </aside>
         </section>
-        <aside class="books-list">
-            <h3>Мои любимые книги</h3>
-            <ol>
-                <li>Властелин Колец</li>
-                <li>Путешествие в Элевсин</li>
-                <li>Овод</li>
-            </ol>
-        </aside>
-        <footer class="my-footer">
-            <p>&copy; 2026 год</p>
-            <p><a href="https://github.com/Acidvein" target="_blank">GitHub</a></p>
-        </footer>
     </main>
+    <gallery>
+        <h1>Галлерея Реечек</h1>
+        <image-galler class="rei-gallery">
+            <im-card class="rei-card">
+                <h3>Обычная Реечка</h3>
+                <img class="rei-image" src="img/Reechka-1.jpg" alt="Изображение обычной Реечки">
+                <p>Реечка снятая в есстественной среде обитания</p>
+            </im-card>
+            <im-card class="rei-card">
+                <h3>Реечка с пистолетом</h3>
+                <img class="rei-image" src="img/Reechka-2.jpg" alt="Изображение Реечки с пистолетом">
+                <p>Реечка с пистолетом снятая в есстественной среде обитания</p>
+            </im-card>
+            <im-card class="rei-card">
+                <h3>Майнкрафт Реечка</h3>
+                <img class="rei-image" src="img/Reechka-3.jpg" alt="Изображение майнкрафт Реечки">
+                <p>Майнкрафт Реечка снятая в есстественной среде обитания</p>
+            </im-card>
+            <im-card class="rei-card">
+                <h3>Реечка застрявшая в деревьях</h3>
+                <img class="rei-image" src="img/Reechka-4.jpg" alt="Изображение Реечки застрявшей в деревьях">
+                <p>Застрявшая в деревьях Реечка снятая в лесу</p>
+            </im-card>
+        </image-galler>
+    </gallery>
+    <footer class="my-footer">
+        <p>&copy; 2026 год</p>
+        <p><a href="https://github.com/Acidvein" target="_blank">GitHub</a></p>
+    </footer>
 </body>
 </html>

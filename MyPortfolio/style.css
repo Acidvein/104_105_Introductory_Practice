@@ -4,6 +4,23 @@
     font-style: normal;
     font-weight: normal;
 }
+.my-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.rei-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.rei-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
 
 body {
     font-family: Pixelify, sans-serif;
@@ -12,6 +29,10 @@ body {
 }
 
 .my-header {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-around;
     background-color: #70587C;
     color: #1E1D1D;
     padding: 17px;
@@ -51,6 +72,12 @@ body {
     border-radius: 3px;
     width: 200px;
 
+}
+
+.rei-image {
+    border: 9px solid deepskyblue;
+    border-radius: 12px;
+    width: 200px;
 }
 
 h1 {
