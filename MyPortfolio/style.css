@@ -35,49 +35,49 @@ body {
     justify-content: space-around;
     background-color: #70587C;
     color: #1E1D1D;
-    padding: 17px;
-    margin-bottom: 9px;
+    padding: 4%;
+    margin-bottom: 1%;
 }
 
 .my-footer {
     background-color: #70587C;
     color: #1E1D1D;
-    padding: 17px;
-    margin-bottom: 9px;
+    padding: 4%;
+    margin-bottom: 1%;
 }
 
 .about-section {
     background-color: #c8b8db;
     color: #1E1D1D;
-    padding: 34px;
-    margin-bottom: 9px;
+    padding: 4%;
+    margin-bottom: 1%;
 }
 
 .hobby-card {
     background-color: #c8b8db;
     color: #1E1D1D;
-    padding: 34px;
-    margin-bottom: 9px;
+    padding: 4%;
+    margin-bottom: 1%;
 }
 
 .books-list {
     background-color: #c8b8db;
     color: #1E1D1D;
-    padding: 34px;
-    margin-bottom: 9px;
+    padding: 4%;
+    margin-bottom: 1%;
 }
 
 .my-image {
     border: 9px solid aquamarine;
-    border-radius: 3px;
-    width: 200px;
+    border-radius: 24px;
+    width: 37%;
 
 }
 
 .rei-image {
     border: 9px solid deepskyblue;
-    border-radius: 12px;
-    width: 200px;
+    border-radius: 36px;
+    width: 37%;
 }
 
 h1 {
@@ -89,4 +89,20 @@ h1 {
 a {
     color: darkred;
     text-decoration: none;
+}
+
+@media screen and (max-width: 580px) {
+    .my-header {
+        flex-direction: column;
+    }
+
+    .my-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .rei-gallery {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
