@@ -65,6 +65,34 @@
                 <p>Застрявшая в деревьях Реечка снятая в лесу</p>
             </im-card>
         </image-galler>
+        <form action="#" method="POST" class="rei-image-form">
+            <h3>Пришлите другие фото Реечек</h3>
+            <div class="form-card">
+                <label for="user_name">Ваше имя:</label>
+                <input type="text" id="user_name" name="username" placeholder="Аянами Рей" required>
+            </div>
+            <div class="form-card">
+                <label for="user_email">Ваша электронная почта:</label>
+                <input type="email" id="user_email" name="email" placeholder="meow@mail.com" required>
+            </div>
+            <div class="form-card">
+                <label for="about-file">Описание фото:</label>
+                <input type="text" id="about-file" name="about-file" required>
+            </div>
+            <div class="form-card">
+                <label for="rei-file">Фото:</label>
+                <input type="file" id="rei-file" name="rei-file" required>
+            </div>
+            <div class="form-card checkbox-group">
+                <input type="checkbox" id="rights_agreement" name="agreement" required>
+                <label for="rights_agreement">Я подтверждаю наличине прав на отправленное фото</label>
+            </div>
+            <div class="form-card checkbox-group">
+                <input type="checkbox" id="user_agreement" name="agreement" required>
+                <label for="user_agreement">Я согласен на обработку персональных данных</label>
+            </div>
+            <button type="submit" class="send-button">Отправить</button>
+        </form>
     </gallery>
     <footer class="my-footer">
         <p>&copy; 2026 год</p>
