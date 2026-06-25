@@ -13,36 +13,23 @@ var reiGalleryData = {
     preferences: new Map([["theme", "dark"], ["language", "ru"]])
 };
 
-// Шаг 2
-for (const key of Object.keys(reiGalleryData.profile)) {
-    console.log(key)
-}
-console.log();
 
-// Шаг 3
-const bestImages =
-    reiGalleryData.imageCards.filter(image => image.likes > 100).map(image => "Карточка: " + image.title);
+const galleryContainer = document.querySelector(".rei-gallery");
 
-for (const image of bestImages) {
-    console.log(image);
-}
-console.log();
+reiGalleryData.imageCards.forEach((image) => {
+    const card = document.createElement("div");
+    card.classList.add("rei-card");
+    const title = document.createElement("h3");
+    title.textContent = image.title;
+    const about = document.createElement("p");
+    about.textContent = image.about;
+    const img = document.createElement("img");
+    img.classList.add("rei-image");
+    img.src = `img/${image.filename}.jpg`;
+    img.alt = image.title;
+    card.append(title);
+    card.append(img);
+    card.append(about);
+    galleryContainer.append(card);
 
-// Шаг 4
-let likesSum = 0;
-for (const image of reiGalleryData.imageCards) {
-    likesSum += image.likes;
-}
-console.log(likesSum);
-console.log();
-
-// Шаг 5
-let allTags = new Set();
-for (const image of reiGalleryData.imageCards) {
-    for (const tag of image.tags) {
-        allTags.add(tag);
-    }
-}
-for (const tag of allTags) {
-    console.log(tag)
-}
+});
